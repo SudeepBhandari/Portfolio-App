@@ -1,0 +1,1181 @@
+# MASTER PROMPT: BUILD A COMPLETE, PRODUCTION-READY PERSONAL PORTFOLIO WEBSITE
+
+## 1. YOUR ROLE
+
+Act as a senior full-stack developer, UI/UX designer, brand strategist, database architect, accessibility specialist, and deployment engineer.
+
+Build a complete, professional, responsive, secure, and fully functional personal portfolio website for Sudip Bhandari.
+
+Do not create only a landing page, static mockup, Figma-style preview, or non-functional prototype.
+
+Build a real website with a public portfolio, a secure admin dashboard, project management, image uploads, contact inquiries, email notifications, WhatsApp integration, database persistence, and deployment instructions.
+
+Every visible button, form, navigation item, dashboard action, filter, and interactive component must work as intended.
+
+If a feature requires an external account, API key, domain configuration, or paid service, explain the requirement and implement the appropriate integration point without pretending it is already configured.
+
+Prioritize a working, maintainable application over unnecessary complexity.
+
+---
+
+## 2. OWNER INFORMATION AND BRAND IDENTITY
+
+Use the following verified information throughout the application.
+
+Full Name: Sudip Bhandari
+
+Professional Title: Creative Graphic Designer & Digital Marketer
+
+Website Domain: https://www.sudipbhandari5.com.np
+
+Primary Email: bhandarysudip5@gmail.com
+
+WhatsApp Number: +9779840631570
+
+WhatsApp Link:
+https://wa.me/9779840631570
+
+Primary Services:
+- Graphic Design
+- UI/UX Design
+- Branding and Brand Identity
+- Social Media Design
+- Video Editing
+- Digital Marketing
+- Website Design and Creative Digital Solutions
+
+Professional Introduction:
+
+"I am a creative professional focused on graphic design, UI/UX design, branding, video editing, and digital marketing. I create thoughtful visual experiences and digital solutions that help brands communicate effectively and stand out."
+
+Use this introduction as editable starter content.
+
+Do not invent employment history, academic qualifications, client testimonials, awards, certifications, project statistics, years of experience, or client names.
+
+Allow the owner to update all profile information from the admin dashboard.
+
+Keep the brand name consistent: Sudip Bhandari.
+
+---
+
+## 3. MAIN OBJECTIVE
+
+Create a premium personal portfolio website that helps potential clients:
+
+1. Understand who I am.
+2. Explore my creative skills.
+3. View my graphic design and UI/UX projects.
+4. Learn about my services.
+5. Review individual projects in detail.
+6. Download my CV.
+7. Contact me through email.
+8. Send project inquiries through a contact form.
+9. Start a conversation through WhatsApp.
+10. Hire me for freelance or professional projects.
+
+The website must also allow me, as the administrator, to manage my content without editing source code for routine updates.
+
+---
+
+## 4. TECHNOLOGY STACK
+
+Choose a practical architecture that can be deployed on free hosting plans.
+
+Preferred frontend:
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router
+- Lucide React icons
+
+Preferred backend and infrastructure:
+- Cloudflare Pages or an appropriate Cloudflare frontend deployment platform
+- Cloudflare Workers for backend API endpoints
+- Cloudflare D1 for relational database storage
+- Cloudflare R2 for project image storage, subject to current plan limits
+- GitHub for source control and deployment integration
+
+Use a compatible Cloudflare-supported database access method and migration system.
+
+Use a suitable email delivery provider for contact notifications. Choose a provider with an available free allowance where possible, but verify its current restrictions before relying on it.
+
+Do not introduce unnecessary paid libraries, hosting platforms, or infrastructure.
+
+If a simpler architecture can deliver the required features reliably, explain the trade-offs and choose the most practical solution.
+
+Pin compatible dependency versions and provide a working lockfile.
+
+---
+
+## 5. DESIGN DIRECTION
+
+Create a premium, modern, minimalist portfolio suitable for a professional graphic designer and digital marketer.
+
+Visual direction:
+- Clean and elegant layout
+- Strong typography and visual hierarchy
+- Spacious composition
+- Refined animations
+- Modern project cards
+- Carefully balanced contrast
+- Consistent spacing and component design
+- Professional visual storytelling
+
+Suggested design palette:
+- Deep charcoal or near-black
+- White and off-white
+- Neutral gray
+- A restrained accent color selected to complement the overall design
+
+Do not make the interface look like a generic AI-generated template.
+
+Avoid excessive gradients, unnecessary glassmorphism, excessive animations, crowded sections, and distracting visual effects.
+
+Use real project images supplied by the owner.
+
+If project images are not available, create tasteful placeholders that can be replaced through the admin dashboard. Clearly distinguish placeholder projects from actual work.
+
+Do not invent portfolio images and present them as genuine completed client projects.
+
+### Responsive requirements
+
+The entire website must work on:
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop monitors
+
+Use responsive layouts, fluid typography, accessible mobile navigation, and touch-friendly buttons.
+
+Test at common mobile and desktop viewport sizes.
+
+### Theme support
+
+Implement:
+- Dark mode
+- Light mode
+- Theme toggle
+- Persistent theme preference
+- Appropriate colors for text, backgrounds, forms, cards, and navigation in both themes
+
+Respect the visitor's system preference on the first visit.
+
+---
+
+## 6. PUBLIC WEBSITE PAGES
+
+Build the following sections and pages.
+
+### A. Home Page
+
+Include:
+- Professional navigation bar
+- Name and professional title
+- Short introduction
+- Primary "Hire Me" button
+- Secondary "View My Work" button
+- Featured projects
+- Services overview
+- Skills overview
+- Short About section
+- Contact call to action
+- Professional footer
+
+Suggested hero heading:
+
+"Creative Design. Meaningful Digital Experiences."
+
+Suggested supporting text:
+
+"I help brands communicate through thoughtful design, engaging digital experiences, and creative marketing solutions."
+
+Primary CTA: Hire Me
+
+Secondary CTA: Explore My Work
+
+Make both buttons functional.
+
+The Hire Me button should lead to the contact section or open an accessible project inquiry form.
+
+The Explore My Work button should navigate to the portfolio section.
+
+### B. About Page
+
+Include:
+- Profile photograph
+- Full name
+- Professional title
+- Editable biography
+- Skills and creative interests
+- Work approach
+- Professional goals
+- CV download button
+
+The administrator must be able to update the profile image and biography.
+
+Do not fabricate personal history or qualifications.
+
+### C. Portfolio / Projects Page
+
+Create a complete project gallery.
+
+Support categories such as:
+- Graphic Design
+- UI/UX Design
+- Branding
+- Social Media Design
+- Video Editing
+- Digital Marketing
+- Web Design
+
+Each project should support:
+- Project title
+- URL-friendly slug
+- Short description
+- Full project description
+- Cover image
+- Additional project images
+- Category
+- Tools and technologies used
+- Project type
+- Optional client name
+- Optional live project URL
+- Optional case study URL
+- Featured project status
+- Publication status
+- Creation date
+- Last updated date
+
+Allow the owner to leave optional fields empty.
+
+Add:
+- Category filters
+- Search by project title
+- Featured projects
+- Responsive grid layout
+- Project detail pages
+- Image preview modal or lightbox
+- Loading states
+- Empty states
+- Helpful error states
+
+Only published projects should appear publicly.
+
+Draft projects must remain private.
+
+### D. Individual Project Detail Page
+
+Each project must have a dedicated URL.
+
+For example:
+
+/projects/project-slug
+
+Display:
+- Project title
+- Cover image
+- Project description
+- Additional images
+- Category
+- Tools used
+- Project objective
+- Design process, when provided
+- Final outcome, when provided
+- Related projects
+- Back to portfolio button
+- Contact or Hire Me CTA
+
+Support social sharing metadata and search-engine-friendly page information.
+
+Do not invent project outcomes, metrics, or business results.
+
+### E. Services Page
+
+Create separate service cards for:
+- Graphic Design
+- UI/UX Design
+- Branding and Visual Identity
+- Social Media Design
+- Video Editing
+- Digital Marketing
+- Website Design
+
+Each service should include:
+- Service title
+- Description
+- Key deliverables
+- Optional starting price
+- Inquiry button
+
+Prices must be optional and editable.
+
+Do not display invented pricing or guarantee business results.
+
+The inquiry button should open the contact form with the selected service prefilled.
+
+### F. Resume / CV Page
+
+Provide:
+- Download CV button
+- View CV button
+- Optional embedded PDF viewer
+
+Allow the administrator to upload or replace the CV.
+
+If no CV has been uploaded, display a clear message rather than a broken download link.
+
+Validate file type and size.
+
+### G. Contact Page
+
+Display:
+- Email address: bhandarysudip5@gmail.com
+- WhatsApp contact button
+- Contact form
+- Available social media links
+- Professional invitation to collaborate
+
+Use configurable social media URLs.
+
+Do not invent profile URLs.
+
+Only display social platforms that have been configured.
+
+### H. Custom 404 Page
+
+Create a branded 404 page with:
+- Clear error message
+- Home button
+- Portfolio button
+
+Unknown routes must not produce a blank screen.
+
+---
+
+## 7. FULLY FUNCTIONAL HIRE ME SYSTEM
+
+Create a professional project inquiry form.
+
+Fields:
+- Full name
+- Email address
+- Optional company or brand
+- Service required
+- Project description
+- Optional estimated budget
+- Optional deadline
+- Preferred contact method
+- Optional reference URL
+- Consent checkbox where appropriate
+
+Validate all required fields on both the client and server.
+
+Provide clear success and error messages.
+
+Prevent accidental duplicate submissions where practical.
+
+Add server-side rate limiting and spam protection.
+
+Do not store unnecessary personal information.
+
+After successful submission:
+1. Save the inquiry to the database.
+2. Return a success response to the visitor.
+3. Trigger an email notification if email delivery is configured.
+4. Make the inquiry available in the admin dashboard.
+5. Show a WhatsApp contact option as a separate action.
+
+Never report a successful submission if the database write failed.
+
+Never report an email as sent unless the email provider confirms successful acceptance.
+
+If email delivery fails after the inquiry has been saved, preserve the inquiry and record the notification failure for later review.
+
+---
+
+## 8. WHATSAPP INTEGRATION
+
+Use this configured WhatsApp link:
+
+https://wa.me/9779840631570
+
+Add:
+- Floating WhatsApp button
+- Contact page WhatsApp button
+- Hire Me page WhatsApp option
+- Optional project-specific WhatsApp inquiry message
+
+Generate the message using URL encoding.
+
+Example message:
+
+"Hello Sudip, I visited your portfolio and would like to discuss a project."
+
+If a visitor selects a service, include the service name in the prefilled message.
+
+Open the WhatsApp conversation using a normal click-to-chat link.
+
+Important limitations:
+- Clicking the button opens WhatsApp or WhatsApp Web.
+- The visitor must send the message themselves.
+- A normal WhatsApp link does not automatically send a message.
+- A normal WhatsApp link does not automatically save messages to the website database.
+- It does not provide automatic WhatsApp notifications to the owner.
+
+Do not claim that WhatsApp messages are automatically synchronized with the admin dashboard.
+
+If automated WhatsApp Business messaging is proposed later, explain its separate setup, permissions, possible costs, and applicable messaging rules.
+
+The core website must work without WhatsApp Business API access.
+
+---
+
+## 9. EMAIL NOTIFICATION SYSTEM
+
+Use this email address as the destination for project inquiry notifications:
+
+bhandarysudip5@gmail.com
+
+Implement an email integration using a provider that supports server-side transactional email delivery.
+
+Requirements:
+- Send an administrator notification when a new inquiry is submitted.
+- Include the inquiry reference ID.
+- Include the client's name, email, requested service, and message.
+- Include a link to the admin dashboard, when available.
+- Use a safe, configurable sender address verified by the chosen provider.
+- Use the client's email only as the reply-to address after validation.
+- Escape user-provided content to prevent HTML injection.
+- Never expose email API keys in frontend code.
+
+Store secrets as deployment environment variables.
+
+Use clear configuration documentation.
+
+If the provider requires domain verification, explain that requirement.
+
+Do not promise that email delivery will work before the required credentials and provider configuration have been completed and tested.
+
+Record delivery status and provide a way to retry failed notifications.
+
+Do not send repeated emails on every page refresh.
+
+---
+
+## 10. SECURE ADMIN DASHBOARD
+
+Create a private admin dashboard at:
+
+/admin
+
+The admin dashboard must be simple, clean, responsive, and easy to operate.
+
+Create a proper login page at:
+
+/admin/login
+
+The administrator must be able to authenticate securely.
+
+### Security requirements
+
+- Never hardcode an administrator password in frontend JavaScript.
+- Never rely on hiding the admin URL as a security measure.
+- Never use localStorage as the sole authentication mechanism.
+- Verify authentication on the server for every protected operation.
+- Hash passwords using an appropriate secure password-hashing algorithm.
+- Use secure, HttpOnly, SameSite cookies for sessions.
+- Enable Secure cookies in production over HTTPS.
+- Implement session expiration and logout.
+- Apply CSRF protection where appropriate.
+- Rate-limit login attempts.
+- Validate all incoming data on the server.
+- Use parameterized database queries.
+- Enforce authorization for every admin API endpoint.
+- Configure restrictive CORS policies where needed.
+- Keep API keys and session secrets out of GitHub.
+- Never expose private inquiries through public API endpoints.
+
+Use a safe initial administrator provisioning process.
+
+Document how to create the first admin account without publishing credentials in source code.
+
+Do not provide a public admin registration page.
+
+Do not create a universal default password.
+
+### Dashboard overview
+
+Display:
+- Total published projects
+- Total draft projects
+- Total inquiries
+- New inquiries
+- Recent inquiries
+- Quick actions
+
+Keep the interface simple and uncluttered.
+
+### Project management
+
+Implement fully functional:
+- Add project
+- Edit project
+- Delete project
+- Publish project
+- Unpublish project
+- Save draft
+- Mark as featured
+- Change category
+- Upload project images
+- Replace images
+- Reorder images
+- Preview project
+- Search projects
+- Filter projects
+- Paginate project lists
+
+Ask for confirmation before destructive actions.
+
+Use clear validation errors.
+
+Changes must persist in the database and appear on the public website when published.
+
+### Inquiry management
+
+Implement:
+- View inquiries
+- View inquiry details
+- Search inquiries
+- Filter by status
+- Mark as new
+- Mark as contacted
+- Mark as in progress
+- Mark as completed
+- Archive inquiries
+- Delete inquiries after confirmation
+
+Store a timestamp for every inquiry.
+
+Keep inquiry data private.
+
+Do not expose inquiry information in publicly accessible project APIs.
+
+### Profile management
+
+Allow the administrator to edit:
+- Display name
+- Professional title
+- Biography
+- Profile photo
+- Skills
+- Services
+- Social links
+- Contact information
+- CV file
+- Homepage hero text
+
+Validate data before saving.
+
+Changes should persist after refresh.
+
+---
+
+## 11. DATABASE DESIGN
+
+Create database migrations and document the schema.
+
+Suggested tables:
+
+### admins
+- id
+- email
+- password_hash
+- created_at
+- updated_at
+- last_login_at
+
+### projects
+- id
+- title
+- slug
+- short_description
+- description
+- category
+- tools_json
+- cover_image_key
+- featured
+- status
+- client_name
+- project_url
+- case_study_url
+- created_at
+- updated_at
+- published_at
+
+### project_images
+- id
+- project_id
+- image_key
+- alt_text
+- sort_order
+- created_at
+
+### inquiries
+- id
+- full_name
+- email
+- company
+- service
+- message
+- budget
+- deadline
+- preferred_contact
+- reference_url
+- status
+- created_at
+- updated_at
+
+### site_settings
+- id
+- setting_key
+- setting_value
+- updated_at
+
+### email_notifications
+- id
+- inquiry_id
+- provider
+- status
+- error_summary
+- attempt_count
+- last_attempt_at
+- created_at
+
+Use appropriate primary keys, foreign keys, indexes, unique constraints, and validation.
+
+Do not store uploaded image files directly inside D1.
+
+Store image files in the configured object storage and save their storage keys in the database.
+
+Do not store API keys or passwords in the site_settings table.
+
+Do not expose sensitive admin records through public endpoints.
+
+Provide:
+- Initial database migration
+- Database setup instructions
+- Safe initial administrator provisioning instructions
+- Development seed data clearly labeled as sample content
+
+---
+
+## 12. IMAGE UPLOAD AND MEDIA MANAGEMENT
+
+Allow the administrator to upload project images through the dashboard.
+
+Requirements:
+- Validate allowed file types.
+- Validate file size.
+- Generate safe, unique object keys.
+- Prevent path traversal and unsafe filenames.
+- Restrict uploads to authenticated administrators.
+- Validate actual file content where practical.
+- Provide image previews before saving.
+- Provide useful upload progress and error states.
+- Allow image replacement and deletion.
+- Generate appropriate alt text or request it from the administrator.
+- Use responsive image rendering and lazy loading.
+- Preserve image aspect ratios.
+
+Use Cloudflare R2 or another appropriate storage service with a verified free allowance.
+
+If the free storage allowance is exceeded, explain the options and any possible charges.
+
+Do not make private files publicly accessible by accident.
+
+Never trust a file's extension alone as proof that it is safe.
+
+---
+
+## 13. API DESIGN
+
+Create a structured backend API.
+
+Suggested public endpoints:
+
+GET /api/health
+
+GET /api/profile
+
+GET /api/services
+
+GET /api/projects
+
+GET /api/projects/:slug
+
+POST /api/inquiries
+
+Suggested admin endpoints:
+
+POST /api/admin/login
+
+POST /api/admin/logout
+
+GET /api/admin/me
+
+GET /api/admin/projects
+
+POST /api/admin/projects
+
+GET /api/admin/projects/:id
+
+PUT /api/admin/projects/:id
+
+DELETE /api/admin/projects/:id
+
+POST /api/admin/uploads
+
+GET /api/admin/inquiries
+
+GET /api/admin/inquiries/:id
+
+PATCH /api/admin/inquiries/:id
+
+GET /api/admin/settings
+
+PUT /api/admin/settings
+
+Adapt endpoint paths where necessary.
+
+Implement consistent response formats and HTTP status codes.
+
+Return useful error messages without exposing stack traces, secrets, SQL details, or internal infrastructure information.
+
+All protected endpoints must verify authentication and authorization server-side.
+
+Public project endpoints must return published projects only.
+
+Public APIs must never return private inquiries or administrator credentials.
+
+---
+
+## 14. FREE HOSTING AND CUSTOM DOMAIN
+
+Target domain:
+
+www.sudipbhandari5.com.np
+
+Preferred deployment approach:
+- GitHub for version control
+- Cloudflare-compatible frontend hosting
+- Cloudflare Workers for backend APIs
+- Cloudflare D1 for the database
+- Cloudflare R2 for media storage, if appropriate
+
+Before deployment:
+1. Inspect the existing project structure.
+2. Confirm that the frontend build succeeds.
+3. Configure the backend.
+4. Create the production database.
+5. Apply database migrations.
+6. Configure object storage if required.
+7. Configure environment variables and secrets.
+8. Deploy the frontend.
+9. Deploy the backend.
+10. Connect the custom domain.
+11. Configure the required DNS records.
+12. Verify HTTPS.
+13. Test all production API routes.
+14. Test the contact form and email delivery.
+15. Test admin login and project management.
+
+Important domain rules:
+- Do not invent DNS records.
+- Inspect the current DNS setup before changing records.
+- Do not remove existing records blindly.
+- Preserve any existing email-related DNS records that the domain owner needs.
+- Explain nameserver changes and their consequences before recommending them.
+- Use the exact DNS instructions provided by the hosting provider.
+
+The website should work on both the apex domain and the www subdomain if the owner configures both.
+
+Configure one canonical domain and redirect the other to it.
+
+Use HTTPS and configure appropriate canonical URLs.
+
+### Free-plan requirements
+
+Keep the project suitable for a zero-cost starting deployment where possible.
+
+However:
+- Check the provider's current free-plan quotas.
+- Identify any required account verification.
+- Identify any external service limitations.
+- Identify any charges that could occur if usage exceeds allowances.
+- Avoid features that silently trigger paid services.
+- Explain when a feature cannot be delivered within the free plan.
+
+Never claim that every service is unlimited or guaranteed to remain free.
+
+---
+
+## 15. SEO AND SOCIAL SHARING
+
+Implement:
+- Page-specific titles
+- Meta descriptions
+- Canonical URLs
+- Open Graph metadata
+- Social sharing images
+- Sitemap.xml
+- Robots.txt
+- Semantic HTML
+- Clean URLs
+- Descriptive image alt text
+- Appropriate structured data where accurate
+
+Use the website domain:
+
+https://www.sudipbhandari5.com.np
+
+Create metadata for the homepage, services, portfolio, and individual project pages.
+
+Use the owner's verified professional details only.
+
+Do not create fake reviews, fake ratings, or false business credentials.
+
+Ensure public portfolio pages can be crawled by search engines.
+
+Do not index the admin dashboard or private inquiry pages.
+
+---
+
+## 16. PERFORMANCE AND ACCESSIBILITY
+
+Optimize for:
+- Fast page loading
+- Small JavaScript bundles
+- Responsive images
+- Lazy loading
+- Efficient API requests
+- Caching of public content where appropriate
+- Keyboard navigation
+- Visible focus states
+- Accessible form labels
+- Appropriate color contrast
+- Reduced-motion preferences
+- Screen-reader-friendly controls
+
+Avoid unnecessary dependencies.
+
+Prevent layout shifts caused by images.
+
+Use accessible modal behavior and proper focus management.
+
+Do not sacrifice accessibility for visual effects.
+
+---
+
+## 17. SECURITY AND PRIVACY
+
+Implement:
+- Server-side validation
+- Authentication and authorization
+- Secure session handling
+- Login rate limiting
+- Contact-form rate limiting
+- Spam protection
+- Safe HTML rendering
+- Secure file uploads
+- Appropriate security headers
+- Restricted admin routes
+- Safe error handling
+- Secrets management
+- Minimal personal data collection
+
+Provide a basic privacy notice explaining what information the contact form collects and how inquiries are handled.
+
+Do not collect analytics or tracking data unnecessarily.
+
+Do not expose private email provider credentials or database secrets.
+
+Do not include production credentials in the repository, documentation, sample data, or frontend bundle.
+
+If analytics are added later, use a privacy-conscious approach and document any consent requirements that apply.
+
+---
+
+## 18. ERROR HANDLING AND RELIABILITY
+
+Handle:
+- Failed database connections
+- Invalid form submissions
+- Duplicate submissions
+- Failed image uploads
+- Failed email notifications
+- Expired admin sessions
+- Unauthorized API requests
+- Missing project images
+- Invalid project URLs
+- Network interruptions
+- Empty search results
+- Unknown routes
+
+Display helpful user-facing messages.
+
+Log technical errors securely on the server without exposing confidential data.
+
+Do not silently discard a saved inquiry because an email notification failed.
+
+Make it possible to retry failed email notifications from the admin dashboard.
+
+Do not implement automatic retries that could repeatedly send duplicate emails without proper safeguards.
+
+---
+
+## 19. REQUIRED TESTING
+
+Create automated tests where practical.
+
+At minimum, verify:
+
+### Public website
+- Homepage loads.
+- Navigation works.
+- Projects load from the database.
+- Category filtering works.
+- Project details open correctly.
+- Draft projects remain hidden.
+- CV download works when a CV exists.
+- WhatsApp buttons use the correct destination.
+- Contact form validates input.
+- Mobile layout works.
+- Dark and light modes work.
+
+### Admin dashboard
+- Unauthenticated users cannot access protected APIs.
+- Invalid credentials are rejected.
+- Login rate limiting works.
+- Logout invalidates the session.
+- Projects can be created.
+- Projects can be edited.
+- Projects can be published and unpublished.
+- Projects can be deleted with confirmation.
+- Image uploads are validated.
+- Inquiry statuses can be updated.
+- Profile changes persist.
+- Data remains after page refresh.
+
+### Contact workflow
+- A valid inquiry is saved.
+- An invalid inquiry is rejected.
+- Spam protection is applied.
+- Email notification is attempted only after a valid submission is saved.
+- Email failures are recorded.
+- The visitor sees an accurate success or error message.
+- Private inquiry data is not publicly accessible.
+
+### Production checks
+- HTTPS works.
+- Custom domain resolves correctly.
+- API endpoints work.
+- Database migrations succeed.
+- Environment variables are configured.
+- No production secrets are exposed.
+- No critical console errors remain.
+
+Report actual test results. Do not claim a test passed if it was not executed.
+
+---
+
+## 20. REQUIRED PROJECT STRUCTURE
+
+Organize the code into maintainable frontend and backend components.
+
+Use a structure similar to:
+
+portfolio/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── admin/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── public/
+│   └── package.json
+├── backend/
+│   ├── src/
+│   │   ├── routes/
+│   │   ├── middleware/
+│   │   ├── services/
+│   │   ├── validation/
+│   │   └── index.ts
+│   ├── migrations/
+│   └── package.json
+├── tests/
+├── .gitignore
+├── README.md
+└── deployment documentation
+
+Adapt this structure to the selected deployment framework.
+
+Do not force unnecessary monorepo complexity if the chosen platform requires a different structure.
+
+Provide complete source files and working configuration.
+
+Avoid pseudocode, empty event handlers, fake API responses, and TODO-only implementations for required core features.
+
+---
+
+## 21. REQUIRED DELIVERABLES
+
+Produce the following:
+
+1. Complete frontend source code.
+2. Complete backend source code.
+3. Responsive public portfolio.
+4. Secure admin authentication.
+5. Functional project CRUD operations.
+6. Database schema and migrations.
+7. Image upload integration.
+8. Working contact inquiry endpoint.
+9. Admin inquiry management.
+10. Email notification integration.
+11. WhatsApp click-to-chat integration.
+12. CV upload and download functionality.
+13. Dark and light themes.
+14. SEO configuration.
+15. Automated tests where practical.
+16. Environment variable example file containing placeholders only.
+17. Local development instructions.
+18. Production deployment instructions.
+19. Custom domain setup instructions.
+20. Troubleshooting guide.
+21. Security checklist.
+22. Explanation of free-plan limitations.
+23. A list of external accounts and configuration steps still required.
+24. A final verification report identifying tested, untested, and unconfigured features.
+
+Never include real passwords, private API keys, session secrets, or database credentials in example files.
+
+---
+
+## 22. IMPLEMENTATION WORKFLOW
+
+Follow this sequence.
+
+### Phase 1: Inspect and plan
+- Inspect any existing code or supplied assets.
+- Identify missing requirements.
+- Select compatible technologies.
+- Explain the architecture briefly.
+- Define the database schema and API routes.
+
+### Phase 2: Build the public website
+- Create the responsive layout.
+- Build all public pages.
+- Implement project categories and project details.
+- Add contact and WhatsApp buttons.
+- Implement theme switching.
+- Add CV support and SEO.
+
+### Phase 3: Build the backend
+- Implement API routes.
+- Configure database access.
+- Add migrations.
+- Implement secure authentication.
+- Add input validation and rate limiting.
+
+### Phase 4: Build the admin dashboard
+- Implement login and logout.
+- Add project management.
+- Add image uploads.
+- Add inquiry management.
+- Add profile and CV management.
+
+### Phase 5: Integrate notifications
+- Save inquiries to the database.
+- Configure email delivery.
+- Record notification status.
+- Add retry handling.
+- Test the WhatsApp link separately.
+
+### Phase 6: Test the application
+- Run the frontend build.
+- Run available automated tests.
+- Fix errors.
+- Test public and protected routes.
+- Verify database persistence.
+- Check mobile responsiveness.
+
+### Phase 7: Deploy
+- Prepare the GitHub repository.
+- Configure Cloudflare services.
+- Apply database migrations.
+- Configure production secrets.
+- Deploy frontend and backend.
+- Connect the domain safely.
+- Test the deployed website.
+
+### Phase 8: Handover
+- Explain how to maintain the website.
+- Explain how to add and edit projects.
+- Explain how to manage inquiries.
+- Explain how to replace the CV.
+- Explain how to update profile details.
+- Explain how to configure email delivery.
+- Explain how to back up important data.
+- List remaining manual configuration steps.
+
+Do not skip directly to a polished-looking homepage while leaving the backend unimplemented.
+
+---
+
+## 23. DEFINITION OF DONE
+
+The project is complete only when the following conditions are satisfied or any remaining limitations are explicitly documented:
+
+- The public portfolio is functional.
+- All navigation works.
+- Project data is stored persistently.
+- Admin authentication is enforced server-side.
+- Project management works through the dashboard.
+- Project images can be uploaded securely.
+- Contact inquiries are saved to the database.
+- Email delivery is configured and tested, or its remaining setup requirements are documented.
+- WhatsApp opens the correct contact.
+- The CV feature works when a CV is uploaded.
+- The website is responsive.
+- The domain deployment steps are documented.
+- No production secrets are exposed.
+- Free-plan limitations are documented.
+- Actual test results are reported honestly.
+
+A starter template, a design preview, or a successful local build alone does not satisfy these requirements.
+
+---
+
+## FINAL INSTRUCTION
+
+Start by inspecting the available project files and requirements.
+
+If no existing project is available, initialize the project from scratch.
+
+Build the actual application in manageable phases, and verify each phase before continuing.
+
+If you have access to a coding environment, create the necessary files, run the application, execute available tests, and fix errors.
+
+If you cannot directly access my hosting account, GitHub account, domain registrar, or email provider, do not pretend to configure them. Instead, provide the exact instructions and configuration values I must enter myself.
+
+Ask questions only when an answer is genuinely necessary. Otherwise, use the verified details above and sensible defaults.
+
+Prioritize functionality, security, maintainability, responsive design, and zero-cost deployment where feasible.
+
+The final result should be a professional, genuinely usable personal portfolio platform for Sudip Bhandari, not merely a visual demonstration.
