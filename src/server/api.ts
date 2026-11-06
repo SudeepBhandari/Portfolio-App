@@ -588,7 +588,7 @@ router.post('/api/admin/projects', requireAdminAuth, async (req: Request, res: R
 });
 
 // GET /api/admin/projects/:id
-router.get('/api/admin/projects/:id', requireAdminAuth, async (req: Request, res: Response) => {
+router.get('/admin/projects/:id', requireAdminAuth, async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
     const project = await get('SELECT * FROM projects WHERE id = ?', [id]);
